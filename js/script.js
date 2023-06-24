@@ -7,13 +7,10 @@ function generateNumbers() {
 
   var hr = document.getElementById("table-hr");
   hr.style.display = "block";
-
- 
   
   var from = parseInt(document.getElementById("from").value);
   var to = parseInt(document.getElementById("to").value);
 
-  // Clear previous results
   document.getElementById("number-result").innerHTML = "";
   selectedNumbers = [];
 
@@ -69,7 +66,6 @@ function highlightNumbers() {
 }
 
 function calculateSum() {
-
   var tableSum = document.getElementById("sum-table");
   tableSum.style.display = "table";
 
@@ -81,8 +77,6 @@ function calculateSum() {
   var hrMulti = document.getElementById("multi-hr");
   hrMulti.style.display = "block";
 
-
-
   var sum = selectedNumbers.reduce((a, b) => a + b, 0);
   var multiply = selectedNumbers.reduce((a, b) => a * b, 1);
   var numberString = selectedNumbers.toString()
@@ -92,13 +86,5 @@ function calculateSum() {
   document.getElementById("all-numbers").innerHTML = numberString;
   document.getElementById("all-numbers-multiply").innerHTML = numberString;
 }
-// function calculateMultiply() {
-
-//   var sum = selectedNumbers.reduce((a, b) => a * b, 1);
-//   var numberString = selectedNumbers.toString()
-//   // console.log(numberString);
- 
-//   document.getElementById("all-numbers-multiply").innerHTML = numberString;
-// }
 
 
