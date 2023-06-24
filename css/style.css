@@ -1,0 +1,116 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-family: 'Gill Sans Extrabold', sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  
+  width: 100%;
+}
+
+.col {
+  padding: 2px 10px;
+  width: 50%;
+}
+
+.input-box {
+  width: 100%;
+  padding: 7px 0 7px 7px !important;
+  border-radius: 5px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 9px 40px;
+  background-color: #53d5ff;
+  border: none;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.table-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.table-heading {
+  background-color: #c5f0ff;
+}
+.number-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+}
+tr {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+td {
+  padding: 8px;
+}
+
+.number-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #c5f0ff;
+}
+
+.numbers{
+    width: 60%;
+}
+
+button:hover {
+  background-color: #70dbff;
+  color: rgb(101, 100, 100);
+}
+
+.ruler{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px dashed #c4c4c4;
+}
+
+.result-box{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.highlight {
+  background-color: #70dbff;
+}
+
+#number-table{
+  display: none;
+}
+#sum-table{
+  display: none;
+}
+#multiply-table{
+  display: none;
+}
+#table-hr{
+  display: none;
+}
+#sum-hr{
+  display: none;
+}
+#multi-hr{
+  display: none;
+}

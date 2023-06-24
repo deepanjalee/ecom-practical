@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Random Numbers</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 class="heading">Number Generator</h2>
+      <form action="" id="form">
+      <div class="row">
+          <div class="col">
+            <label for="from" class="text">From</label>
+            <input
+              type="number"
+              id="from"
+              name="from"
+              placeholder="From"
+              class="input-box"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="to" class="text">To</label>
+            <input
+              type="number"
+              id="to"
+              placeholder="To"
+              name="to"
+              class="input-box"
+              required
+            />
+          </div>
+          
+        </div>
+        <div class="btn-wrapper">
+            <button type="button" class="btn" onclick="generateNumbers()">Do It</button>
+            <!-- <input type="submit" value="Do It" class="btn"> -->
+          </div>
+      </form>
+
+      <hr class="ruler" id="table-hr" />
+      <div class="table-wrapper" id="number-table">
+        <h3 class="heading">Random Numbers</h3>
+        <table class="number-table">
+          <thead>
+            <tr class="table-heading">
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+              <td>D</td>
+              <td>E</td>
+              <td>F</td>
+              <td>G</td>
+              <td>H</td>
+              <td>I</td>
+              <td>J</td>
+            </tr>
+          </thead>
+  
+          <tbody id="number-result"></tbody>
+        </table>
+
+        <div class="btn-wrapper">
+          <button type="button" class="btn" onclick="highlightNumbers()">Select 10 Numbers</button>
+          <button type="button" class="btn"  onclick="calculateSum()">Calculate </button>
+         
+        </div>
+      </div>
+
+      <hr class="ruler" id="sum-hr"/>
+
+      <div class="" id="sum-table">
+        <h3 class="heading">Results of Sum</h3>
+        <table class="number-table">
+            <tr class="table-heading">
+                <td>#</td>
+                <td>Numbers</td>
+                <td>Sum</td>
+                <!-- <td>Multiply</td> -->
+               
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td  class="numbers">
+                  
+                    <label for="" id="all-numbers"></label>
+                </td>
+                <td>
+                   <input type="number" disabled class="result-box" id="sum-text-box">
+                </td>
+            </tr>
+        </table>
+
+     
+      </div>
+
+      <hr class="ruler " id="multi-hr" />
+
+
+      <div class="" id="multiply-table">
+        <h3 class="heading">Results of Multiply</h3>
+        <table class="number-table">
+            <tr class="table-heading">
+                <td>#</td>
+                <td>Numbers</td>
+                <td>Multiply</td>
+               
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td class="numbers">
+                  <label for="" id="all-numbers-multiply"></label>
+                </td>
+                <td>
+                   <input type="number" disabled id="multiply-text-box" class="result-box">
+                </td>
+            </tr>
+        </table>
+
+     
+      </div>
+
+      <!-- <div>
+        <button type="button" onclick="highlightNumbers()">Highlight</button>
+        <button type="button" onclick="calculateSum()">Calculate Sum</button>
+        <input type="text" id="sumTextbox" readonly>
+      </div> -->
+
+
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
